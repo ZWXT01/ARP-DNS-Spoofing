@@ -22,7 +22,7 @@ DNS：一般我们访问一个网页（或者资源）都是以域名的形式�
 
 ## 1、ARP欺骗概念（单向欺骗，双向欺骗）+DNS劫持概念：
 
-## ![ARP欺骗](./master/image/ARP欺骗.png)
+## ![ARP欺骗](./image/ARP欺骗.png)
 
 ### ARP单向欺骗：
 
@@ -34,7 +34,7 @@ DNS：一般我们访问一个网页（或者资源）都是以域名的形式�
 
 ### DNS劫持（又叫域名劫持）：
 
-![DNS劫持](./master/image/DNS劫持.png)
+![DNS劫持](./image/DNS劫持.png)
 
 攻击机向目标机器发送构造好的ARP应答数据包，ARP欺骗成功后，嗅探到对方发出的DNS请求数据包，分析数据包取得ID和端口号后，向目标发送自己构造好的一个DNS返回包，对方收到DNS应答包后，发现ID和端口号全部正确，即把返回数据包中的域名和对应的IP地址保存进DNS缓存表中，而后来的当真实的DNS应答包返回时则被丢弃。
 
@@ -167,15 +167,15 @@ nscd -g（查看DNS统计信息，需要看是否自带此工具）
 └─# ettercap -G    
 ```
 
-![step_1](./master/image/step_1.png)
+![step_1](./image/step_1.png)
 
-![step_2](./master/image/step_2.png)
+![step_2](./image/step_2.png)
 
-![step_3](./master/image/step_3.png)
+![step_3](./image/step_3.png)
 
 
 
-![step_4](./master/image/step_4.png)
+![step_4](./image/step_4.png)
 
 
 
